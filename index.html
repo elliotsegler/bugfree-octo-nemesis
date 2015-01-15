@@ -3,16 +3,24 @@
 
 <html>
 <head>
+
   <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
   <meta content="utf-8" http-equiv="encoding">
+
+  <!-- Adding fonts -->
+  <script src="css/source-sans-pro.js"></script>
+
+  <!-- Styles -->
+  <link href="css/styles.css" rel="stylesheet" />
+
 </head>
 <body>
 
   <!-- Home View Template -->
   <script id="home-tpl" type="text/x-handlebars-template">
     <div class='header'><h1>Home</h1><div>
-    <div class='search-bar'><input class='search-key' type="text"/></div>
-    <ul class='employee-list'></ul>
+    <div class='search-bar'><input class='search-key' type="search"/></div>
+    <div class='scroll'><ul class='employee-list'></ul></div>
   </script>
 
   <!-- Employee View Template -->
