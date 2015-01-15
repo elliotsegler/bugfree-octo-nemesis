@@ -25,9 +25,11 @@ var MemoryStore = function(successCallback, errorCallback) {
     // that use async data access APIs
     var callLater = function(callback, data) {
         if (callback) {
-            setTimeout(function() {
-                callback(data);
-            });
+            if (typeof callback=="function") {
+              setTimeout(function() {
+                  callback(data);
+              });
+            }
         }
     }
 
