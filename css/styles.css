@@ -189,6 +189,7 @@ h2 {
     height:100px;
 }
 
+/* Scrollable elements */
 .scroll {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -197,4 +198,10 @@ h2 {
   bottom: 0px;
   left: 0px;
   right: 0px; 
+}
+
+/* Highlight clicked elements */
+li>a.tappable-active {
+  color: #fff;
+  background-color: #4286f5;
 }
